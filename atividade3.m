@@ -1,0 +1,15 @@
+b=1;
+a1=-10;
+a2=10;
+a3=-10+100i;
+a4=10+100i;
+t=0:0.001:1;
+x1=b*exp(a1*t);
+x2=b*exp(a2*t);
+x3=b*exp(a3*t);
+x4=b*exp(a4*t);
+figure
+subplot(2,2,1),plot(t,x1),xlabel('Tempo(t)'),ylabel('Amplitude'),grid
+subplot(2,2,2),plot(t,x2),xlabel('Tempo(t)'),ylabel('Amplitude'),grid
+subplot(2,2,3),plot(t,real(x3)),xlabel('Tempo(t)'),ylabel('Amplitude'),grid
+subplot(2,2,4),plot(t,real(x4)),xlabel('Tempo(t)'),ylabel('Amplitude'),grid
